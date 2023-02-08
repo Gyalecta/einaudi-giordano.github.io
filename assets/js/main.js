@@ -1,7 +1,9 @@
-// Example function to show a message when the page loads
-function showWelcomeMessage() {
-    alert("Benvenuti nel nostro social network riservato agli studenti!");
-}
+// Your JavaScript code goes here
 
-// Attach the showWelcomeMessage function to the window load event
-window.addEventListener("load", showWelcomeMessage);
+// Example: Navbar toggle
+var navbarToggle = document.querySelector('.navbar-toggle');
+var navbarMenu = document.querySelector('.navbar-menu');
+
+navbarToggle.addEventListener('click', function () {
+  navbarMenu.classList.toggle('is-active');
+});

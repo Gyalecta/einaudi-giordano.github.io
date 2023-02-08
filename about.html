@@ -1,0 +1,20 @@
+---
+layout: default
+title: About
+---
+
+<h1>About {{ site.title }}</h1>
+
+<p>{{ site.description }}</p>
+
+<h2>La nostra missione</h2>
+
+<p>La nostra missione è connettere le persone e avvicinare il mondo attraverso un social network accessibile, inclusivo e potenziante.</p>
+
+<h2>Our Team</h2>
+
+<ul>
+  {% for member in site.team %}
+    <li>{{ member.name }} - {{ member.position }}</li>
+  {% endfor %}
+</ul>
